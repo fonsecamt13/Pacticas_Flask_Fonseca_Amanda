@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Perimetro del Triangulo</title>
+</head>
+<body>
+    <nav> 
+        <a href="/area_triangulo">Area Triangulo</a> | 
+        <strong><a href="/perimetro_triangulo">Perimetro Triángulo</a></strong>
+    </nav>
+    <hr>
+    <h1>Calculo: Perimetro de un Triangulo</h1>
+    <p>Formula: Lado 1 + Lado 2 + Lado 3</p>
+    
+    <form method="POST">
+        <input type="number" step="any" name="lado1" placeholder="Lado 1" required>
+        <input type="number" step="any" name="lado2" placeholder="Lado 2" required>
+        <input type="number" step="any" name="lado3" placeholder="Lado 3" required>
+        <button type="submit">Calcular Perimetro</button>
+    </form>
+
+    {% if resultado is not none %}
+        <h2>El perimetro es: {{ resultado }} u</h2>
+    {% endif %}
+</body>
+</html>

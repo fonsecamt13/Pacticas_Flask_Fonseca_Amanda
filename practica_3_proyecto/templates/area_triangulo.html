@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Area del Triangulo</title>
+</head>
+<body>
+    <nav>| 
+        <strong><a href="/area_triangulo">Area Triangulo</a></strong> | 
+        <a href="/perimetro_triangulo">Perimetro Triangulo</a>
+    </nav>
+    <hr>
+    <h1>Calculo: Area de un Triangulo</h1>
+    <p>Formula: (Base x Altura) / 2</p>
+    
+    <form method="POST">
+        <input type="number" step="any" name="base" placeholder="Base" required>
+        <input type="number" step="any" name="altura" placeholder="Altura" required>
+        <button type="submit">Calcular Area</button>
+    </form>
+
+    {% if resultado is not none %}
+        <h2>El area es: {{ resultado }}</h2>
+
+    {% endif %}
+</body>
+</html>
